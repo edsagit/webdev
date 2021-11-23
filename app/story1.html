@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WD - Story 1</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="side-buttons">
+        <div class="logotype">
+            <a href="../index.html">
+                <img src="../assets/images/logotype.png" alt="logotype">
+            </a>
+        </div>
+        <div class="button">
+            <a id="inventoryButton" href="#">
+                <img src="../assets/images/inventory.png" alt="inventory">
+                <p>Inventory</p>
+            </a>
+        </div>
+        <div class="button">
+            <a href="#">
+                <img src="../assets/images/profile.png" alt="profile">
+                <p>Profile</p>
+            </a>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div id="inventoryModal" class="modal">
+        <div class="inventoryModalContent">
+            <div id="buttonRow">
+                <button id="InventoryTabButton" class="tabButton" onclick="openTab('Inventory', this, '#E5E5E5')"
+                    )>Inventory</button>
+                <button id="StatsTabButton" class="tabButton" onclick="openTab('Stats', this, '#E5E5E5')"
+                    )>Stats</button>
+                <button id="closeModal">&times;</button>
+            </div>
+
+            <div id="Inventory" class="tabContent">
+                <p>Gold:</p>
+                <p id="goldValue">0</p>
+                <div id="InventoryContent">
+                    <!-- items added by js -->
+                </div>
+            </div>
+            <div id="Stats" class="tabContent">
+                <div id="StatsContent">
+                    <div>
+                        <p class="statHeader">Initial</p>
+                    </div>
+                    <div>
+                        <p class="statHeader">Current</p>
+                    </div>
+                    <div class="statCell">
+                        <p class="statName">Strength</p>
+                        <p class="statValue" id="initialStrengthValue">0</p>
+                        <progress id="initialStrength" value="0" max="30"></progress>
+                    </div>
+                    <div class="statCell">
+                        <p class="statName">Strength</p>
+                        <p class="statValue" id="currentStrengthValue">0</p>
+                        <progress id="currentStrength" value="0" max="30"></progress>
+                    </div>
+                    <div class="statCell">
+                        <p class="statName">Skill</p>
+                        <p class="statValue" id="initialSkillValue">0</p>
+                        <progress id="initialSkill" value="0" max="30"></progress>
+                    </div>
+                    <div class="statCell">
+                        <p class="statName">Skill</p>
+                        <p class="statValue" id="currentSkillValue">0</p>
+                        <progress id="currentSkill" value="0" max="30"></progress>
+                    </div>
+                    <div class="statCell">
+                        <p class="statName">Luck</p>
+                        <p class="statValue" id="initialLuckValue">0</p>
+                        <progress id="initialLuck" value="0" max="30"></progress>
+                    </div>
+                    <div class="statCell">
+                        <p class="statName">Luck</p>
+                        <p class="statValue" id="currentLuckValue">0</p>
+                        <progress id="currentLuck" value="0" max="30"></progress>
+                    </div>
+                    <div class="statCell">
+                        <p class="statName">Venom</p>
+                        <p class="statValue" id="initialVenomValue">0</p>
+                        <progress id="initialVenom" value="0" max="30"></progress>
+                    </div>
+                    <div class="statCell">
+                        <p class="statName">Venom</p>
+                        <p class="statValue" id="currentVenomValue">0</p>
+                        <progress id="currentVenom" value="0" max="30"></progress>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modalArrow" class="modalArrow"></div>
+    </div>
+    <section>
+        <div class="top">
+            <div class="left">
+                <div class="text">
+                    <h1>Chapter 1</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt velit eligendi, corrupti minima
+                        laudantium dolorum dolorem dolore quae ipsum repellat numquam cum, quasi quis accusantium, sit
+                        nobis
+                        odit iste animi.
+                        Nostrum nulla illo cum, veritatis dolor vel ut placeat sed non optio facilis minima dignissimos,
+                        culpa harum repudiandae distinctio voluptatum! Quidem porro est magni alias, dicta dignissimos
+                        quo
+                        modi unde.</p>
+                </div>
+
+
+            </div>
+            <div class="right">
+                <div class="img">
+                    <img src="../assets/images/stories/1/img-0.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <div class="left">
+                <div class="img">
+                    <img src="../assets/images/stories/1/img-1.png" alt="">
+                </div>
+            </div>
+            <div class="right">
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt velit eligendi, corrupti minima
+                        laudantium dolorum dolorem dolore quae ipsum repellat numquam cum, quasi quis accusantium, sit
+                        nobis
+                        odit iste animi.
+                        Nostrum nulla illo cum, veritatis dolor vel ut placeat sed non optio facilis minima dignissimos,
+                        culpa harum repudiandae distinctio voluptatum! Quidem porro est magni alias, dicta dignissimos
+                        quo
+                        modi unde.</p>
+                </div>
+                <div class="chapterButtons">
+                    <a href="#" class="button-left">Choice 1</a>
+                    <a href="#" class="button-middle">Choice 2</a>
+                    <a href="#" class="button-right">Choice 3</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section>
+        <div class="top">
+            <div class="left">
+                <div class="text">
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt velit eligendi, corrupti minima
+                        laudantium dolorum dolorem dolore quae ipsum repellat numquam cum, quasi quis accusantium, sit
+                        nobis
+                        odit iste animi.
+                        Nostrum nulla illo cum, veritatis dolor vel ut placeat sed non optio facilis minima dignissimos,
+                        culpa harum repudiandae distinctio voluptatum! Quidem porro est magni alias, dicta dignissimos
+                        quo
+                        modi unde.</p>
+                </div>
+                <div class="img">
+                    <img src="" alt="">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="bottom">
+            <div class="right">
+                <div class="text">
+                    <h1>Chapter 2</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt velit eligendi, corrupti minima
+                        laudantium dolorum dolorem dolore quae ipsum repellat numquam cum, quasi quis accusantium, sit
+                        nobis
+                        odit iste animi.
+                        Nostrum nulla illo cum, veritatis dolor vel ut placeat sed non optio facilis minima dignissimos,
+                        culpa harum repudiandae distinctio voluptatum! Quidem porro est magni alias, dicta dignissimos
+                        quo
+                        modi unde.</p>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <section>
+        <div class="top">
+            <div class="left">
+                <div class="text">
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt velit eligendi, corrupti minima
+                        laudantium dolorum dolorem dolore quae ipsum repellat numquam cum, quasi quis accusantium, sit
+                        nobis
+                        odit iste animi.
+                        Nostrum nulla illo cum, veritatis dolor vel ut placeat sed non optio facilis minima dignissimos,
+                        culpa harum repudiandae distinctio voluptatum! Quidem porro est magni alias, dicta dignissimos
+                        quo
+                        modi unde.</p>
+                </div>
+                <div class="img">
+                    <img src="../assets/images/stories/1/img-0.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bottom">
+            <div class="right">
+                <div class="text">
+                    <h1>Chapter 3</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt velit eligendi, corrupti minima
+                        laudantium dolorum dolorem dolore quae ipsum repellat numquam cum, quasi quis accusantium, sit
+                        nobis
+                        odit iste animi.
+                        Nostrum nulla illo cum, veritatis dolor vel ut placeat sed non optio facilis minima dignissimos,
+                        culpa harum repudiandae distinctio voluptatum! Quidem porro est magni alias, dicta dignissimos
+                        quo
+                        modi unde.</p>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <canvas id="bg-canvas"></canvas>
+    <script src="../js/inventory.js"></script>
+    <script src="../js/story.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,485 @@
+@font-face {
+    font-family: 'parkingregular';
+    src: url('../assets/fonts/parking-regular-webfont.eot');
+    src: url('../assets/fonts/parking-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/parking-regular-webfont.woff2') format('woff2'),
+         url('../assets/fonts/parking-regular-webfont.woff') format('woff'),
+         url('../assets/fonts/parking-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #252525;
+    color: white;
+    font-family: 'parkingregular';
+  }
+
+/**********************
+// SIDE BAR ICONS
+**********************/
+
+  .side-buttons {
+    position: fixed;
+    left: 5px;
+}
+
+.side-buttons .button {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.side-buttons .logotype {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.side-buttons .logotype a img {
+    width: 100%;
+}
+
+.side-buttons .button a {
+    text-decoration: none;
+}
+
+.side-buttons .button a:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+}
+
+.side-buttons .button a img {
+    width: 60%;
+    margin-left: 8px;
+    margin-bottom: -10px;
+}
+
+.side-buttons .button p {
+    color: white;
+}
+
+/**********************
+// LANDING PAGE
+**********************/
+  
+  .left-container {
+    height: 300px;
+    width:25%;
+    position: fixed;
+    top: 33%;
+    margin-left: 150px;
+  }
+  
+  .form-login {
+    position: inherit;
+    width: 200px;
+  }
+
+  .form-login label {
+    font-size: x-large;
+    margin-bottom: 10px;
+  }
+  
+  .form-login .input {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 30px;
+    width: 90%;
+    font-size: large;
+    border-radius: 5px;
+    border: none;
+    text-indent: 10px;
+  }
+
+  .form-login a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .form-login a:hover {
+    text-decoration: underline;
+  }
+  
+  .form-login .button-login {
+    margin-bottom: 40px;
+    width: 90%;
+    font-family: 'parkingregular';
+    font-size: x-large;
+    background-color: #78B773;
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+    color: #252525;
+  }
+  .form-login .button-login:hover {
+    background-color: #4d704b;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .right-container {
+    height: 100%;
+    width: 75%;
+    left: 25%;
+    position: fixed;
+    transform-origin: center right;
+    transform: rotate(0);
+  }
+  
+  .links {
+    text-align: left;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 1000px;
+    transform-origin: center right;
+  }
+
+  .links div.link-title {
+    float: right;
+    margin-right: 50%;
+  }
+
+  .links a {
+    color: white;
+    text-decoration: none;
+    font-size:x-large;
+  }
+  
+  .links a:hover {
+    opacity: 0.7;
+  }
+
+  .links a:hover {
+    text-decoration: underline;
+  }
+
+  .links a span {
+    font-size: medium;
+  }
+  
+  .links img {
+    width: 250px;
+    color: white;
+  }
+  
+  .links:nth-child(0) {
+    transform: rotate(0deg);
+  }
+  
+  .links:nth-child(1) {
+    transform: rotate(45deg);
+  }
+  
+  .links:nth-child(2) {
+    transform: rotate(90deg);
+  }
+  
+/**********************
+// USER PAGE
+**********************/
+
+ .search {background-color: red;}
+ .search form {
+     float: right;
+ }
+
+  .container-all-stories {
+    width: 80%;
+    margin: auto;
+    display: flex;
+  }
+
+  .container-all-stories h1 {
+      width: 300px;
+      height: 300px;
+    margin-left: 100px;
+  }
+
+  .links-all-stories {
+    width: 300px;
+    height: 200px;
+    margin-right: 50px;
+  }
+
+  .links-all-stories a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .links-all-stories a:hover {
+      opacity: 0.7;
+    text-decoration: underline;
+  }
+
+  .links-all-stories img {
+    width: 300px;
+  }
+
+/**********************
+// STORY PAGE
+**********************/
+
+  #bg-canvas {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    min-height: 400vh;
+  }
+  
+section {
+    display: grid;
+    padding: 5em;
+}
+
+section .top {
+    width: 100%;    
+}
+
+section .bottom {
+    width: 100%;    
+}
+
+section .left {
+        width: 40%;
+        margin-right: 100px;
+      float: left;
+  }
+
+section .right {
+    width: 40%;
+      float: right;
+}
+
+section .text {
+    margin: 1em;
+}
+
+section .img {
+    width: 100%;
+}
+
+section .img img {
+  width: 100%;
+}
+
+section .text p {
+    text-align: justify-all;
+}
+
+section .chapterButtons a {
+    color: white;
+    text-decoration: none;
+}
+
+section .chapterButtons a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+section .chapterButtons .button-left {
+    border: solid 1px white;
+    border-radius: 20px 0 0 20px;
+    padding: 10px;
+}
+
+section .chapterButtons .button-middle {
+    border: solid 1px white;
+    border-radius: 0 0 0 0;
+    padding: 10px;
+}
+
+section .chapterButtons .button-right {
+    border: solid 1px white;
+    border-radius: 0 20px 20px 0;
+    padding: 10px;
+}
+
+/**********************
+// INVENTORY MODAL
+**********************/
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.inventoryModalContent{
+    background-color: #555;
+    margin: auto;
+    padding: 20px;
+    /*border: 1px solid #888;*/
+    width: 80%;
+    border: none;
+    border-radius: 15px;
+}
+
+#closeModal{
+    color: #aaaaaa;
+    float: right;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: #555;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    width: 5%;
+}
+
+#closeModal:hover, #closeModal:focus{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modalArrow{
+    content: "";
+    display: block;
+    position: fixed;
+    top: 25%;
+    bottom: auto;
+    right: 90.5%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 35px 25px 0;
+    border-color: transparent #555 transparent transparent;
+}
+
+#buttonRow{
+    background-color: #555;
+    border: none;
+    outline: none;
+    overflow: auto;
+}
+
+.tabButton{
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+.tabButton:hover{
+    background-color: #777;
+}
+
+.tabContent{
+    color: white;
+    display: none;
+    padding: 50px 20px;
+    height: 100%;
+}
+
+#InventoryTabButton{
+    border-radius: 20px 20px 0px 0px;
+}
+
+#Inventory{
+    background-color: #E5E5E5;
+    border-radius: 0px 20px 20px 20px;
+    color: #2C2C2C;
+}
+
+#Inventory > p{
+    display: inline;
+}
+
+#InventoryContent{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+}
+
+.itemCell{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #2C2C2C;
+    width: fit-content;
+}
+
+#StatsTabButton{
+    border-radius: 20px 20px 0px 0px;
+}
+
+#Stats{
+    background-color: #E5E5E5;
+    border-radius: 20px;
+    color: #2C2C2C;
+}
+
+#StatsContent{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.statCell{
+    width: fit-content;
+}
+
+.statName{
+    /*display: inline;*/
+    float: left;
+    margin-top: 0px;
+}
+
+.statValue{
+    /*display: inline;*/
+    float: right;
+    margin-top: 0px;
+}
+
+/* TODO styling progress bars for IE10 and moz */
+progress[value]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    color: #2F2F2F;
+    display: block;
+    margin-top: 20px;
+}
+
+progress[value]::-webkit-progress-bar{
+    background-color: #2F2F2F;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+progress[value]::-webkit-progress-value{
+    border-radius: 10px;
+}
+
+#initialStrength[value]::-webkit-progress-value, #currentStrength[value]::-webkit-progress-value{
+    background-color: #6DB066;
+}
+
+#initialSkill[value]::-webkit-progress-value, #currentSkill[value]::-webkit-progress-value{
+    background-color: #E07820;
+}
+
+#initialVenom[value]::-webkit-progress-value, #currentVenom[value]::-webkit-progress-value{
+    background-color: #A459CC;
+}
+
+#currentLuck[value]::-webkit-progress-value, #initialLuck[value]::-webkit-progress-value{
+    background-color: #606ED5;
+}
