@@ -442,7 +442,6 @@ section .chapterButtons .button-right {
 .tabContent{
     color: white;
     display: none;
-    padding: 50px 20px;
     height: 100%;
 }
 
@@ -471,7 +470,7 @@ section .chapterButtons .button-right {
     border-style: solid;
     border-width: 1px;
     border-color: #2C2C2C;
-    width: fit-content;
+    width: 100%;
 }
 
 #StatsTabButton{
@@ -489,10 +488,11 @@ section .chapterButtons .button-right {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
+    padding: 10px;
 }
 
 .statCell{
-    width: fit-content;
+    width: 100%;
 }
 
 .statName{
@@ -504,6 +504,7 @@ section .chapterButtons .button-right {
 .statValue{
     /*display: inline;*/
     float: right;
+    margin-right: 100px;
     margin-top: 0px;
 }
 
@@ -612,6 +613,10 @@ progress[value]::-webkit-progress-value{
         margin-top: 30px;
     }
 
+    #StatsContent{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
 
 /*Buttons________________________________*/
 
@@ -675,5 +680,9 @@ progress[value]::-webkit-progress-value{
         border-radius: 20px;
         padding: 10px;
         font-size: 2.5vw;
+    }
+
+    progress {
+        width: 100px;
     }
 }

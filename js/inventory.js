@@ -139,7 +139,7 @@ function addItem(name, quantity, image, ID){
 
         let itemImage = document.createElement("img");
         itemImage.setAttribute("src", image);
-        itemImage.setAttribute("width", "100");
+        itemImage.setAttribute("width", "100%");
         itemCell.appendChild(itemImage);
 
         let itemName = document.createElement("p");
