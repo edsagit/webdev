@@ -5,8 +5,21 @@
          url('../assets/fonts/parking-regular-webfont.woff2') format('woff2'),
          url('../assets/fonts/parking-regular-webfont.woff') format('woff'),
          url('../assets/fonts/parking-regular-webfont.ttf') format('truetype');
+         url('../assets/fonts/parking-regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'argesta_displayregular';
+    src: url('argestadisplay-regular-webfont.eot');
+    src: url('argestadisplay-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('argestadisplay-regular-webfont.woff2') format('woff2'),
+    url('argestadisplay-regular-webfont.woff') format('woff'),
+    url('argestadisplay-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 body {
@@ -67,8 +80,8 @@ body {
     height: 300px;
     width:25%;
     position: fixed;
-    top: 33%;
     margin-left: 150px;
+      top: 25%;
   }
   
   .form-login {
@@ -183,23 +196,50 @@ body {
  .search {background-color: red;}
  .search form {
      float: right;
+     margin-right: 2%;
+ }
+
+ .search .searchIcon {
+     padding-top: 5px;
+     margin-right: 5px;
+ }
+
+ .search .searchBar {
+     border: 1px solid white;
+     border-radius: 10px;
+     background-color: white;
+     padding: 10px;
+ }
+
+ .search .searchButton {
+     border: solid 2px white;
+     border-radius: 8px;
+     padding: 10px;
+     font-size: 1em;
+     color: white;
+     background-color: #252525;
  }
 
   .container-all-stories {
-    width: 80%;
+    width: 60%;
     margin: auto;
-    display: flex;
   }
 
-  .container-all-stories h1 {
-      width: 300px;
-      height: 300px;
-    margin-left: 100px;
+.container-all-stories .stories {
+    display: inline-flex;
+    margin-top: 30px;
+}
+
+  .container-all-stories .title {
+    margin-top: 5%;
   }
+
+.container-all-stories .title h1 {
+    font-size: 4em;
+}
 
   .links-all-stories {
-    width: 300px;
-    height: 200px;
+    width: 50%;
     margin-right: 50px;
   }
 
@@ -214,7 +254,7 @@ body {
   }
 
   .links-all-stories img {
-    width: 300px;
+    width: 100%;
   }
 
 /**********************
@@ -267,6 +307,14 @@ section .img img {
 
 section .text p {
     text-align: justify-all;
+    font-family: "Open Sans Light";
+    font-size: 1.2em; /*carefull*/
+    padding-bottom: 10px;
+
+}
+
+section .chapterButtons {
+    margin-left: 15px;
 }
 
 section .chapterButtons a {
@@ -283,16 +331,26 @@ section .chapterButtons .button-left {
     border: solid 1px white;
     border-radius: 20px 0 0 20px;
     padding: 10px;
+    font-size: 1.5vw;
 }
 
 section .chapterButtons .button-middle {
     border: solid 1px white;
     border-radius: 0 0 0 0;
     padding: 10px;
+    font-size: 1.5vw;
+}
+
+section .chapterButtons .button-solo {
+    border: solid 1px white;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 1.5vw;
 }
 
 section .chapterButtons .button-right {
     border: solid 1px white;
+    font-size: 1.5vw;
     border-radius: 0 20px 20px 0;
     padding: 10px;
 }
@@ -390,6 +448,7 @@ section .chapterButtons .button-right {
 
 #InventoryTabButton{
     border-radius: 20px 20px 0px 0px;
+    font-family: 'parkingregular';
 }
 
 #Inventory{
@@ -417,6 +476,7 @@ section .chapterButtons .button-right {
 
 #StatsTabButton{
     border-radius: 20px 20px 0px 0px;
+    font-family: 'parkingregular';
 }
 
 #Stats{
@@ -482,4 +542,99 @@ progress[value]::-webkit-progress-value{
 
 #currentLuck[value]::-webkit-progress-value, #initialLuck[value]::-webkit-progress-value{
     background-color: #606ED5;
+}
+
+@media only screen and (max-width: 800px) {
+    /*
+    .left-container {
+        height: 300px;
+        width:5%;
+        position: fixed;
+        top: 33%;
+        margin-left: 150px;
+    }
+
+    section .left {
+        width: 40%;
+        margin-right: 100px;
+        float: right;
+    }
+
+     */
+    section .text p {
+        text-align: justify-all;
+        font-family: "Open Sans Light";
+        font-size: 1.2em; /*carefull*/
+        padding-bottom: 10px;
+
+    }
+
+    section {
+        display: grid;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    section .top {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    section .bottom {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    section .left {
+        width: 70%; /*carefull*/
+        margin-right: 0;
+        float: right;
+    }
+
+    section .right {
+        width: 70%;
+        margin-left: 100px;
+        float: right;
+    }
+
+    .container-all-stories .stories {
+        display: inline-grid;
+    }
+
+    .links-all-stories {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+
+/*Buttons________________________________*/
+
+    section .chapterButtons .button-left {
+        border: solid 1px white;
+        border-radius: 20px 0 0 20px;
+        padding: 10px;
+        font-size: 3vw;
+    }
+
+    section .chapterButtons .button-middle {
+        border: solid 1px white;
+        border-radius: 0 0 0 0;
+        padding: 10px;
+        font-size: 3vw;
+    }
+
+    section .chapterButtons .button-right {
+        border: solid 1px white;
+        font-size: 3vw;
+        border-radius: 0 20px 20px 0;
+        padding: 10px;
+    }
+
+    section .chapterButtons .button-solo {
+        border: solid 1px white;
+        border-radius: 20px;
+        padding: 10px;
+        font-size: 3vw;
+    }
 }
