@@ -4,7 +4,7 @@
     src: url('../assets/fonts/parking-regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('../assets/fonts/parking-regular-webfont.woff2') format('woff2'),
          url('../assets/fonts/parking-regular-webfont.woff') format('woff'),
-         url('../assets/fonts/parking-regular-webfont.ttf') format('truetype');
+         url('../assets/fonts/parking-regular-webfont.ttf') format('truetype'),
          url('../assets/fonts/parking-regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -561,6 +561,11 @@ progress[value]::-webkit-progress-value{
     }
 
      */
+
+    .right-container {
+        display: none;
+    }
+
     section .text p {
         text-align: justify-all;
         font-family: "Open Sans Light";
@@ -636,5 +641,39 @@ progress[value]::-webkit-progress-value{
         border-radius: 20px;
         padding: 10px;
         font-size: 3vw;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    section .text p {
+        font-size: 1em;
+    }
+
+    section .chapterButtons .button-left {
+        border: solid 1px white;
+        border-radius: 20px 0 0 20px;
+        padding: 10px;
+        font-size: 2.5vw;
+    }
+
+    section .chapterButtons .button-middle {
+        border: solid 1px white;
+        border-radius: 0 0 0 0;
+        padding: 10px;
+        font-size: 2.5vw;
+    }
+
+    section .chapterButtons .button-right {
+        border: solid 1px white;
+        font-size: 2.5vw;
+        border-radius: 0 20px 20px 0;
+        padding: 10px;
+    }
+
+    section .chapterButtons .button-solo {
+        border: solid 1px white;
+        border-radius: 20px;
+        padding: 10px;
+        font-size: 2.5vw;
     }
 }
